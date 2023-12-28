@@ -26,7 +26,7 @@ const Navbar = async () => {
         {session?.user ? (
           <UserAccountNav user={session.user} />
         ) : (
-          <Link href='/sign-in' className={buttonVariants()}>
+          <Link href='/sign-in' className='active:scale-95 inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 disabled:opacity-50 dark:focus:ring-slate-400 disabled:pointer-events-none dark:focus:ring-offset-slate-900 bg-zinc-900 text-zinc-100 hover:bg-zinc-800 sm:w-20 w-32 py-3 text-center'>
             Sign In
           </Link>
         )}
