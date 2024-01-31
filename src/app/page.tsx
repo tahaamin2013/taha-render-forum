@@ -1,3 +1,4 @@
+import Communites from '@/components/Communites'
 import CustomFeed from '@/components/homepage/CustomFeed'
 import GeneralFeed from '@/components/homepage/GeneralFeed'
 import { buttonVariants } from '@/components/ui/Button'
@@ -43,6 +44,8 @@ export default async function Home() {
               Create Community
             </Link>
           </dl>
+          <Communites />
+          
         </div>
       </div>
     </>
