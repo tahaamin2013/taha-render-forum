@@ -10,8 +10,8 @@ import { notFound } from 'next/navigation'
 import { ReactNode } from 'react'
 
 export const metadata: Metadata = {
-  title: 'Breadit',
-  description: 'A Reddit clone built with Next.js and TypeScript.',
+  title: `Taha Render Forum`,
+  description: 'This render forum allows you to give you best communities',
 }
 
 const Layout = async ({
@@ -22,7 +22,7 @@ const Layout = async ({
   params: { slug: string }
 }) => {
   const session = await getAuthSession()
-
+  
   const subreddit = await db.subreddit.findFirst({
     where: { name: slug },
     include: {
@@ -34,6 +34,7 @@ const Layout = async ({
       },
     },
   })
+
 
   const subscription = !session?.user
     ? undefined

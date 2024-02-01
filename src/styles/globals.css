@@ -79,3 +79,14 @@
     font-feature-settings: 'rlig' 1, 'calt' 1;
   }
 }
+
+.mycol-span-1 {
+  position: relative;
+}
+
+.mycol-span-1 > div {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
