@@ -59,21 +59,18 @@ export default async function Home() {
     //     <Communites />
     //   </div>
     // </div>
-    <div className="flex gap-x-5">
-    <div className="flex-none w-1/4 bg-red-500" />
-      {/* Fixed sidebar column */}
-      {/* <div className="flex-none w-1/4 bg-emerald-400 fixed top-0 h-screen z-10">
-        <SideBar />
-      </div> */}
 
-      {/* Main content column */}
-      <div className="flex-2 w-1/2 bg-gray-200">
+    <div className="flex gap-x-5 bg-white max-h-full">
+      <div className="flex-none w-1/4 md:block hidden">
+        <SideBar />
+      </div>
+
+      <div className="flex-2 mt-10 md:mx-0 mx-8 md:w-1/2 w-full">
         {/* @ts-expect-error server component */}
         {session ? <CustomFeed /> : <GeneralFeed />}
       </div>
 
-      {/* Third column */}
-      <div className="w-1/4 bg-gray-300">
+      <div className="w-1/4 mr-5 md:block hidden">
         <Communities />
       </div>
     </div>

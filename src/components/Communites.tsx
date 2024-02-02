@@ -32,7 +32,7 @@ const CommunitiesList: FC = () => {
 
   return (
     <div className="border-[1px] col-span-1 bg-white border-solid border-dark dark:border-light text-dark dark:text-light rounded-lg p-4 sticky top-24 max-h-[80vh] overflow-hidden overflow-y-auto h-fit">
-      <h3 className="text-lg font-semibold capitalize">Table Of Content</h3>
+      <h3 className="text-lg font-semibold capitalize">Communities</h3>
       {loading ? (
         <div className="mt-4 flex flex-col gap-5">
           <Skeleton className="h-[35px] w-[40%]" />
