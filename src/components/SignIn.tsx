@@ -10,7 +10,7 @@ const SignIn = () => {
       <Image src="/Logo.png" alt='Logo' width={56} height={56}/>
         <h1 className='text-2xl font-semibold tracking-tight'>Welcome back</h1>
         <p className='text-sm max-w-xs mx-auto text-center'>
-          By continuing, you are setting up a Breadit account and agree to our
+          By continuing, you are setting up a Render Forum account and agree to our
           User Agreement and Privacy Policy.
         </p>
       </div>
