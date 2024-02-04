@@ -36,8 +36,8 @@ const about = () => {
               </h2>
               <p className="mb-4 text-base leading-7 text-gray-500 dark:text-gray-400">
                 Taha Render Forum is home to thousands of communities and
-                Whether you're into breaking news, sports, TV fan theories, or a
-                never-ending stream of the internet's cutest animals, there's a
+                Whether you&apos;re into breaking news, sports, TV fan theories, or a
+                never-ending stream of the internet&apos;s cutest animals, there&apos;s a
                 community on Render Forum for you.
               </p>
               <ul className="mb-10">
