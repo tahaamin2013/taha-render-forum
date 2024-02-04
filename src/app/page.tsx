@@ -70,7 +70,7 @@ export default async function Home() {
         {session ? <CustomFeed /> : <GeneralFeed />}
       </div>
 
-      <div className="w-1/4 mr-5 md:block hidden">
+      <div className="w-1/4 mr-5 lg:block hidden">
         <Communities />
       </div>
     </div>
